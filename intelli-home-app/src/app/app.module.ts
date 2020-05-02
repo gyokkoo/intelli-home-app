@@ -10,16 +10,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-  ],
-  bootstrap: [AppComponent]
+   declarations: [AppComponent],
+   entryComponents: [],
+   imports: [
+      BrowserModule,
+      BrowserAnimationsModule,
+      AppRoutingModule,
+      MaterialModule,
+      IonicModule.forRoot(),
+      ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+   ],
+   providers: [
+      StatusBar,
+      SplashScreen,
+      { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+   ],
+   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+}
