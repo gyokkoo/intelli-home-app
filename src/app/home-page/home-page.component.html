@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+   <ion-toolbar>
+      <ion-title>
+         {{pageTitle}}
+      </ion-title>
+   </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+   <ion-header collapse="condense">
+      <ion-toolbar>
+         <ion-title size="large">{{pageTitle}}</ion-title>
+      </ion-toolbar>
+   </ion-header>
+
+   <div class="page-container">
+      <app-home-page-view></app-home-page-view>
+   </div>
+</ion-content>
