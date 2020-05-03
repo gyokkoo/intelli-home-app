@@ -1,3 +1,42 @@
-<p>
-  settings-page-view works!
-</p>
+<div>
+   <div class="page-title inline-block">Accounts</div>
+
+   <mat-card class="example-card">
+      <mat-card-header class="centered-header">
+         <div mat-card-avatar><img class="avatar-image"
+                                   src="../../../../assets/avatars/home-owner.png"
+                                   alt="Owner's photo"/></div>
+         <mat-card-title>Ivan Ivanov</mat-card-title>
+         <mat-card-subtitle>Owner</mat-card-subtitle>
+      </mat-card-header>
+   </mat-card>
+
+</div>
+
+<mat-divider></mat-divider>
+
+<div>
+   <div class="page-title inline-block">System features</div>
+</div>
+<div>
+   <div>
+      <div class="toggle-label">
+         <mat-label class="mat-slide-toggle-content">Voice control</mat-label>
+      </div>
+      <mat-slide-toggle [color]="'primary'"></mat-slide-toggle>
+   </div>
+   <div>
+      <div class="toggle-label">
+         <mat-label class='mat-slide-toggle-content'>Dynamic environment
+         </mat-label>
+      </div>
+      <mat-slide-toggle color='primary'></mat-slide-toggle>
+   </div>
+   <div>
+      <div class="toggle-label">
+         <mat-label class="mat-slide-toggle-content">Analytics data collection
+         </mat-label>
+      </div>
+      <mat-slide-toggle color='primary' [checked]="true"></mat-slide-toggle>
+   </div>
+</div>
