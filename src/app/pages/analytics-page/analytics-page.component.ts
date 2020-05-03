@@ -1,14 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-analytics-page',
-  templateUrl: './analytics-page.component.html',
-  styleUrls: ['./analytics-page.component.scss'],
+  templateUrl: 'analytics-page.component.html',
+  styleUrls: ['analytics-page.component.scss']
 })
-export class AnalyticsPageComponent implements OnInit {
+export class AnalyticsPageComponent {
 
-  constructor() { }
+  pageTitle = 'Analytics';
 
-  ngOnInit() {}
-
+  constructor() {}
 }

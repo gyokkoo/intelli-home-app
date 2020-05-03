@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { TabsPageRoutingModule } from './main-navigation-routing.module';
+import { MainNavigationRoutingModule } from './main-navigation-routing.module';
 
 import { MainNavigationComponent } from './main-navigation.component';
 
@@ -12,7 +12,7 @@ import { MainNavigationComponent } from './main-navigation.component';
       IonicModule,
       CommonModule,
       FormsModule,
-      TabsPageRoutingModule
+      MainNavigationRoutingModule
    ],
    declarations: [MainNavigationComponent]
 })

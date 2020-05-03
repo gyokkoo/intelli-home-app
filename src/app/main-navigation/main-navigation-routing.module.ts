@@ -9,15 +9,19 @@ const routes: Routes = [
       children: [
          {
             path: 'home',
-            loadChildren: () => import('../home-page/home-page.module').then(m => m.HomePageModule)
+            loadChildren: () => import('../pages/home-page/home-page.module').then(m => m.HomePageModule)
          },
          {
-            path: 'tab2',
-            loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+            path: 'rooms',
+            loadChildren: () => import('../pages/rooms-page/rooms-page.module').then(m => m.RoomsPageModule)
          },
          {
-            path: 'tab3',
-            loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+            path: 'analytics',
+            loadChildren: () => import('../pages/analytics-page/analytics-page.module').then(m => m.AnalyticsPageModule)
+         },
+         {
+            path: 'settings',
+            loadChildren: () => import('../pages/settings-page/settings-page.module').then(m => m.SettingsPageModule)
          },
          {
             path: '',
@@ -37,5 +41,5 @@ const routes: Routes = [
    imports: [RouterModule.forChild(routes)],
    exports: [RouterModule]
 })
-export class TabsPageRoutingModule {
+export class MainNavigationRoutingModule {
 }

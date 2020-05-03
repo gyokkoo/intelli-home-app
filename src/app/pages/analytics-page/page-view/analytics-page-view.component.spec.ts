@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ExploreContainerComponent } from './explore-container.component';
+import { AnalyticsPageViewComponent } from './analytics-page-view.component';
 
-describe('ExploreContainerComponent', () => {
-   let component: ExploreContainerComponent;
-   let fixture: ComponentFixture<ExploreContainerComponent>;
+describe('AnalyticsPageComponent', () => {
+   let component: AnalyticsPageViewComponent;
+   let fixture: ComponentFixture<AnalyticsPageViewComponent>;
 
    beforeEach(async(() => {
       TestBed.configureTestingModule({
-         declarations: [ExploreContainerComponent],
+         declarations: [AnalyticsPageViewComponent],
          imports: [IonicModule.forRoot()]
       }).compileComponents();
 
-      fixture = TestBed.createComponent(ExploreContainerComponent);
+      fixture = TestBed.createComponent(AnalyticsPageViewComponent);
       component = fixture.componentInstance;
       fixture.detectChanges();
    }));

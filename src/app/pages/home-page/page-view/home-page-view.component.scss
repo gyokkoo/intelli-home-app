@@ -1,0 +1,46 @@
+.quick-status-text {
+   font-size: xx-large;
+   color: #3f51b5;
+}
+
+.refresh-icon {
+   padding-left: 10px;
+}
+
+.section-wrapper {
+   padding-top: 20px;
+
+   .status-icon {
+      font-size: 40px;
+   }
+
+   .block-item {
+      display: inline-block;
+   }
+   
+   .item-header {
+      padding-left: 1rem;
+      font-size: larger;
+      text-align: left;
+   }
+
+   .item-description {
+      padding-left: 1rem;
+      font-size: smaller;
+      color: #6c757d;
+      width: 250px;
+      text-align: left;
+   }
+   
+   .item-icon {
+      font-size: larger;
+   }
+   
+   .warning-icon {
+      color: orange;
+   }
+   
+   .blue-icon {
+      color: #3f51b5;
+   }
+}
