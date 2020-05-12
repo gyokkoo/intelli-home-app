@@ -1,0 +1,32 @@
+
+.room-name {
+   padding-left: 1rem;
+   font-size: larger;
+   vertical-align: super;
+}
+
+.small-icon {
+   width: 16px;
+   height: 16px;
+}
+
+.room-statistics {
+   padding-top: 5px;
+   color: #6c757d;
+   display: inline-block;
+}
+
+.room-header {
+   text-align: left;
+   padding-left: 10px;
+}
+
+.room-stat {
+   padding-left: 0.5rem;
+}
+
+.room-wrapper {
+   border: 1px solid rgba(0, 0, 0, .03);
+   box-shadow: 0 2px 2px rgba(0, 0, 0, .24), 0 0 2px rgba(0, 0, 0, .12);
+   padding: 1rem 1.5rem;
+}

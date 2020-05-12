@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RoomCardItem, RoomsDataService } from '../rooms-data.service';
+import { Observable } from 'rxjs';
 
 @Component({
    selector: 'app-rooms-page',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoomsPageViewComponent implements OnInit {
 
-   constructor() {
+   roomsData$: Observable<RoomCardItem[]>;
+
+   constructor(private roomsDataService: RoomsDataService) {
    }
 
-   ngOnInit() {
+   ngOnInit(): void {
+      this.roomsData$ = this.roomsDataService.getRoomsData();
    }
 }

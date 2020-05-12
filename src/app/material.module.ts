@@ -8,6 +8,8 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
    exports: [
@@ -20,6 +22,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
       MatSelectModule,
       MatSortModule,
       MatSlideToggleModule,
+      MatDividerModule,
+      MatCardModule,
    ]
 })
 export class MaterialModule {
