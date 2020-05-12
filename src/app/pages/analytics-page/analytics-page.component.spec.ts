@@ -30,6 +30,6 @@ describe('AnalyticsPageComponent', () => {
    });
 
    it('should have correct title', () => {
-      expect(component.pageTitle).toEqual('Settings');
+      expect(component.pageTitle).toEqual('Analytics');
    });
 });

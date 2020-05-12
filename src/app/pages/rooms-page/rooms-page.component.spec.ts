@@ -1,9 +1,15 @@
+import { Component } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
-import { ExploreContainerComponentModule } from '../../explore-container/explore-container.module';
 
 import { RoomsPageComponent } from './rooms-page.component';
-import { RoomsPageViewComponent } from './page-view/rooms-page-view.component';
+
+@Component({
+   selector: 'app-rooms-page',
+   template: ``,
+})
+class RoomsPageViewMockComponent {
+}
 
 describe('RoomsPageComponent', () => {
    let component: RoomsPageComponent;
@@ -13,9 +19,9 @@ describe('RoomsPageComponent', () => {
       TestBed.configureTestingModule({
          declarations: [
             RoomsPageComponent,
-            RoomsPageViewComponent
+            RoomsPageViewMockComponent,
          ],
-         imports: [IonicModule, ExploreContainerComponentModule]
+         imports: [IonicModule]
       }).compileComponents();
 
       fixture = TestBed.createComponent(RoomsPageComponent);

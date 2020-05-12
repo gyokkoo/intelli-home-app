@@ -1,11 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ExploreContainerComponentModule } from '../../explore-container/explore-container.module';
 import { HomePageComponent } from './home-page.component';
 import { HomePageViewComponent } from './page-view/home-page-view.component';
 
-describe('Tab1Page', () => {
+describe('HomePageComponent', () => {
    let component: HomePageComponent;
    let fixture: ComponentFixture<HomePageComponent>;
 
@@ -15,7 +14,7 @@ describe('Tab1Page', () => {
             HomePageComponent,
             HomePageViewComponent
          ],
-         imports: [IonicModule, ExploreContainerComponentModule]
+         imports: [IonicModule]
       }).compileComponents();
 
       fixture = TestBed.createComponent(HomePageComponent);

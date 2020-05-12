@@ -1,7 +1,8 @@
 <div *ngIf="roomData"
      class="inline-block room-wrapper">
    <div class="room-header">
-      <img [src]="roomData.headerImage" alt="Room icon">
+      <img class="room-image"
+           [src]="roomData.headerImage" alt="Room icon">
       <span class="room-name">{{ roomData.title }}</span>
    </div>
    <div class="room-statistics">
