@@ -1,25 +1,35 @@
+import { Component } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
-import { ExploreContainerComponentModule } from '../../explore-container/explore-container.module';
 
 import { RoomsPageComponent } from './rooms-page.component';
 
-describe('Tab2Page', () => {
-  let component: RoomsPageComponent;
-  let fixture: ComponentFixture<RoomsPageComponent>;
+@Component({
+   selector: 'app-rooms-page',
+   template: ``,
+})
+class RoomsPageViewMockComponent {
+}
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [RoomsPageComponent],
-      imports: [IonicModule.forRoot(), ExploreContainerComponentModule]
-    }).compileComponents();
+describe('RoomsPageComponent', () => {
+   let component: RoomsPageComponent;
+   let fixture: ComponentFixture<RoomsPageComponent>;
 
-    fixture = TestBed.createComponent(RoomsPageComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  }));
+   beforeEach(async(() => {
+      TestBed.configureTestingModule({
+         declarations: [
+            RoomsPageComponent,
+            RoomsPageViewMockComponent,
+         ],
+         imports: [IonicModule]
+      }).compileComponents();
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+      fixture = TestBed.createComponent(RoomsPageComponent);
+      component = fixture.componentInstance;
+      fixture.detectChanges();
+   }));
+
+   it('should create', () => {
+      expect(component).toBeTruthy();
+   });
 });

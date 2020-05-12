@@ -7,6 +7,8 @@ import { ExploreContainerComponentModule } from '../../explore-container/explore
 
 import { RoomsPageRoutingModule } from './rooms-page-routing.module';
 import { RoomsPageViewComponent } from './page-view/rooms-page-view.component';
+import { RoomCardComponent } from './room-card/room-card.component';
+import { RoomsDataService } from './rooms-data.service';
 
 @NgModule({
    imports: [
@@ -16,9 +18,16 @@ import { RoomsPageViewComponent } from './page-view/rooms-page-view.component';
       ExploreContainerComponentModule,
       RoomsPageRoutingModule
    ],
+   providers: [
+      RoomsDataService,
+   ],
    declarations: [
       RoomsPageComponent,
       RoomsPageViewComponent,
+      RoomCardComponent,
+   ],
+   entryComponents: [
+      RoomCardComponent,
    ]
 })
 export class RoomsPageModule {

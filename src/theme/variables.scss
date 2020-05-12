@@ -76,7 +76,9 @@
   --ion-color-light-tint: #f5f6f9;
 }
 
-@media (prefers-color-scheme: dark) {
+// TODO: Disable dark theme colors until app can support it
+//@media (prefers-color-scheme: none) {
+.disabled {
   /*
    * Dark Colors
    * -------------------------------------------

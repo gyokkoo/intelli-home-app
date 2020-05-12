@@ -1,9 +1,5 @@
 // Ionic custom overrides
 ion-app {
-   ion-header {
-      height: 15%;
-   }
-
    ion-title {
       div {
          font-size: larger;
@@ -24,4 +20,8 @@ ion-app {
 
 .pt-2 {
    padding-top: 2rem;
+}
+
+.inline-block {
+   display: inline-block;
 }
