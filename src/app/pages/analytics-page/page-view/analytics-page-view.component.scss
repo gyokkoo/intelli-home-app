@@ -1,4 +1,23 @@
-strong {
-   font-size: 20px;
-   line-height: 26px;
+.power-usage-description-wrapper {
+   display: inline-block;
+   text-align: left;
+}
+
+.power-usage-text {
+   font-size: x-large;
+   color: var(--ion-color-primary);
+}
+
+.helper-icon {
+   color: var(--ion-color-primary);
+   padding-left: 0.5rem;
+}
+
+.more-icon {
+   color: var(--ion-color-medium-shade);
+   padding-left: 2rem;
+}
+
+.consumption-text {
+   color: var(--ion-color-medium-shade);
 }

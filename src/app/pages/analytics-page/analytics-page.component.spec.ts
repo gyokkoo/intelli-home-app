@@ -1,9 +1,16 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
-import { ExploreContainerComponentModule } from '../../explore-container/explore-container.module';
+import { Component } from '@angular/core';
 
+import { ExploreContainerComponentModule } from '../../explore-container/explore-container.module';
 import { AnalyticsPageComponent } from './analytics-page.component';
-import { AnalyticsPageViewComponent } from './page-view/analytics-page-view.component';
+
+@Component({
+   selector: 'app-analytics-page',
+   template: '',
+})
+export class AnalyticsPageViewMockComponent {
+}
 
 describe('AnalyticsPageComponent', () => {
    let component: AnalyticsPageComponent;
@@ -13,7 +20,7 @@ describe('AnalyticsPageComponent', () => {
       TestBed.configureTestingModule({
          declarations: [
             AnalyticsPageComponent,
-            AnalyticsPageViewComponent,
+            AnalyticsPageViewMockComponent,
          ],
          imports: [
             IonicModule,

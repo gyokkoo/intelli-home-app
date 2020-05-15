@@ -1,0 +1,10 @@
+#chart {
+   max-width: 380px;
+   margin: 25px auto;
+   padding: 0;
+
+   ::ng-deep .apexcharts-legend {
+      text-align: left;
+   }
+}
+
