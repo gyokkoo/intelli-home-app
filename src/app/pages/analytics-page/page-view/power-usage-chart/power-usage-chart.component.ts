@@ -32,7 +32,7 @@ export class PowerUsageChartComponent implements OnInit {
 
    private initializeChartOptions(): void {
       this.chartOptions = {
-         series: [96.31, 25, 12, 13],
+         series: [50, 25, 12, 13],
          chart: {
             type: 'donut'
          },

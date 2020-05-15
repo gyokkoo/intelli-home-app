@@ -1,6 +1,7 @@
 .power-usage-description-wrapper {
    display: inline-block;
    text-align: left;
+   padding-top: 1rem;
 }
 
 .power-usage-text {
@@ -20,4 +21,14 @@
 
 .consumption-text {
    color: var(--ion-color-medium-shade);
+}
+
+.trends-description-wrapper {
+   display: inline-block;
+   padding-top: 1rem;
+}
+
+.mat-divider {
+   margin-left: 10%;
+   margin-right: 10%;
 }

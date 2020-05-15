@@ -9,12 +9,15 @@ import { AnalyticsPageRoutingModule } from './analytics-page-routing.module';
 import { AnalyticsPageViewComponent } from './page-view/analytics-page-view.component';
 import { AnalyticsPageComponent } from './analytics-page.component';
 import { PowerUsageChartComponent } from './page-view/power-usage-chart/power-usage-chart.component';
+import { UsageTrendsChartComponent } from './page-view/usage-trends-chart/usage-trends-chart.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
    imports: [
       IonicModule,
       CommonModule,
       FormsModule,
+      MatDividerModule,
       NgApexchartsModule,
       ExploreContainerComponentModule,
       AnalyticsPageRoutingModule,
@@ -23,6 +26,7 @@ import { PowerUsageChartComponent } from './page-view/power-usage-chart/power-us
       AnalyticsPageComponent,
       AnalyticsPageViewComponent,
       PowerUsageChartComponent,
+      UsageTrendsChartComponent,
    ]
 })
 export class AnalyticsPageModule {

@@ -3,12 +3,20 @@ import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 
 import { AnalyticsPageViewComponent } from './analytics-page-view.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
    selector: 'app-power-usage-chart',
    template: '',
 })
 export class PowerUsageChartMockComponent {
+}
+
+@Component({
+   selector: 'app-usage-trends-chart',
+   template: '',
+})
+export class UsageTrendsChartMockComponent {
 }
 
 describe('AnalyticsPageComponent', () => {
@@ -19,9 +27,13 @@ describe('AnalyticsPageComponent', () => {
       TestBed.configureTestingModule({
          declarations: [
             AnalyticsPageViewComponent,
-            PowerUsageChartMockComponent
+            PowerUsageChartMockComponent,
+            UsageTrendsChartMockComponent,
          ],
-         imports: [IonicModule]
+         imports: [
+            IonicModule,
+            MatDividerModule,
+         ]
       }).compileComponents();
 
       fixture = TestBed.createComponent(AnalyticsPageViewComponent);
