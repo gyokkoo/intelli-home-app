@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnalyticsPageViewComponent implements OnInit {
 
+   totalMoney = 159.69;
+   totalElectricity = 259.33;
+
    constructor() {
    }
 
