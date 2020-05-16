@@ -32,7 +32,7 @@ export class PowerUsageChartComponent implements OnInit {
 
    private initializeChartOptions(): void {
       this.chartOptions = {
-         series: [50, 25, 12, 13],
+         series: [69, 48.45, 20.24, 22],
          chart: {
             type: 'donut'
          },
@@ -46,6 +46,13 @@ export class PowerUsageChartComponent implements OnInit {
                   },
                   legend: {
                      position: 'bottom'
+                  },
+                  tooltip: {
+                     y: {
+                        formatter: function (val) {
+                           return "€" + val
+                        }
+                     }
                   }
                }
             }
