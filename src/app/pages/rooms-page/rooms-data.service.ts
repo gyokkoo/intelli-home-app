@@ -11,7 +11,7 @@ export interface RoomCardItem {
 }
 
 const livingRoom: RoomCardItem = {
-   headerImage: './assets/app-icons/television-icon.svg',
+   headerImage: 'tv',
    title: 'Living room',
    temperature: 21,
    humidity: 68,
@@ -20,7 +20,7 @@ const livingRoom: RoomCardItem = {
 };
 
 const bathroom: RoomCardItem = {
-   headerImage: './assets/app-icons/bathroom-icon.svg',
+   headerImage: 'bathtub',
    title: 'Bathroom',
    temperature: 27,
    humidity: 87,
@@ -29,7 +29,7 @@ const bathroom: RoomCardItem = {
 };
 
 const bedroom: RoomCardItem = {
-   headerImage: './assets/app-icons/bedroom-icon.svg',
+   headerImage: 'king_bed',
    title: 'Bedroom',
    temperature: 23,
    humidity: 62,
@@ -38,7 +38,7 @@ const bedroom: RoomCardItem = {
 };
 
 const bedroomGuests: RoomCardItem = {
-   headerImage: './assets/app-icons/bedroom-icon.svg',
+   headerImage: 'king_bed',
    title: 'Bedroom (Guests)',
    temperature: 22,
    humidity: 67,
@@ -47,7 +47,7 @@ const bedroomGuests: RoomCardItem = {
 };
 
 const kitchen: RoomCardItem = {
-   headerImage: './assets/app-icons/kitchen-icon.svg',
+   headerImage: 'room_service',
    title: 'Kitchen',
    temperature: 22,
    humidity: 69,
