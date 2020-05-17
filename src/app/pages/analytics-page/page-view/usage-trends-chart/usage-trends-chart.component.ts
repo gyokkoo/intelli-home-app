@@ -49,19 +49,19 @@ export class UsageTrendsChartComponent implements OnInit {
          series: [
             {
                name: 'Kitchen',
-               data: [45, 52, 86, 99]
+               data: [52, 56.4, 59]
             },
             {
                name: 'Living room',
-               data: [35, 41, 74, 65]
+               data: [45.66, 41.34, 46]
             },
             {
                name: 'Bathroom',
-               data: [87, 57, 62, 43]
+               data: [21.44, 18.43, 20.22]
             },
             {
                name: 'Bedroom',
-               data: [70, 25, 34, 40]
+               data: [28.22, 23, 21.99]
             }
          ],
          chart: {
@@ -97,43 +97,15 @@ export class UsageTrendsChartComponent implements OnInit {
                trim: false
             },
             categories: [
-               'Dec 19',
                'Jan 20',
                'Feb 20',
-               'Mart 20',
+               'Mar 20',
             ]
          },
-         tooltip: {
-            y: [
-               {
-                  title: {
-                     formatter(val) {
-                        return val + ' kWh usage';
-                     }
-                  }
-               },
-               {
-                  title: {
-                     formatter(val) {
-                        return val + ' kWh usage';
-                     }
-                  }
-               },
-               {
-                  title: {
-                     formatter(val) {
-                        return val + ' kWh usage';
-                     }
-                  }
-               },
-               {
-                  title: {
-                     formatter(val) {
-                        return val + ' kWh usage';
-                     }
-                  }
-               }
-            ]
+         yaxis: {
+            labels: {
+               formatter: (val) => { return "€" + val }
+            }
          },
          grid: {
             borderColor: '#f1f1f1'

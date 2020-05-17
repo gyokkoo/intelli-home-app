@@ -1,7 +1,15 @@
-.power-usage-description-wrapper {
+#container {
+   padding-bottom: 2rem;
+}
+
+.wrapper {
    display: inline-block;
    text-align: left;
-   padding-top: 1rem;
+   padding-top: 2rem;
+}
+
+.title {
+   display: inline-flex;
 }
 
 .power-usage-text {
@@ -19,13 +27,9 @@
    padding-left: 2rem;
 }
 
-.consumption-text {
+.subTitle {
+   margin-top: .5rem;
    color: var(--ion-color-medium-shade);
-}
-
-.trends-description-wrapper {
-   display: inline-block;
-   padding-top: 1rem;
 }
 
 .mat-divider {

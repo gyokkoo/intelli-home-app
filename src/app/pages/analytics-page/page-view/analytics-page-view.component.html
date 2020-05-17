@@ -1,12 +1,12 @@
 <div id="container">
-   <div class="power-usage-description-wrapper">
-      <div>
-         <span class="power-usage-text">Power usage</span>
-         <span class="material-icons helper-icon">info_outline</span>
-         <span class="material-icons more-icon">more_vert</span>
+   <div class="wrapper">
+      <div class="title">
+         <div class="power-usage-text">Power usage</div>
+         <div class="material-icons helper-icon">info_outline</div>
+         <div class="material-icons more-icon">more_vert</div>
       </div>
 
-      <div class="consumption-text">{{totalMoney}} &euro; ~ {{totalElectricity}}
+      <div class="subTitle">&euro;{{totalMoney}} ~ {{totalElectricity}}
          kWh
       </div>
    </div>
@@ -14,10 +14,13 @@
 
    <mat-divider class="charts-divider"></mat-divider>
 
-   <div class="trends-description-wrapper">
-      <span class="power-usage-text">Trends</span>
-      <span class="material-icons helper-icon">info_outline</span>
-      <span class="material-icons more-icon">more_vert</span>
+   <div class="wrapper">
+      <div class="title">
+         <div class="power-usage-text">Trends</div>
+         <div class="material-icons helper-icon">info_outline</div>
+         <div class="material-icons more-icon">more_vert</div>
+      </div>
+      <div class="subTitle">Last 3 months</div>
    </div>
    <app-usage-trends-chart></app-usage-trends-chart>
 </div>
