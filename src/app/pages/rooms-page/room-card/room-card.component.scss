@@ -5,14 +5,16 @@
 }
 
 .small-icon {
-   width: 16px;
-   height: 16px;
+   width: 20px;
+   height: 20px;
+   opacity: 50%;
 }
 
 .room-statistics {
-   padding-top: 5px;
+   padding-top: .5rem;
    color: #6c757d;
    text-align: left;
+   font-size: small;
 }
 
 .room-header {
@@ -22,7 +24,7 @@
 }
 
 .room-stat {
-   padding-left: 0.5rem;
+   padding-right: 1rem;
 }
 
 .room-image {
