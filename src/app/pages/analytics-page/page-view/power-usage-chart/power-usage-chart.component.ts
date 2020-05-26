@@ -49,8 +49,8 @@ export class PowerUsageChartComponent implements OnInit {
                   },
                   tooltip: {
                      y: {
-                        formatter: function (val) {
-                           return "€" + val
+                        formatter: val => {
+                           return '€' + val;
                         }
                      }
                   }
