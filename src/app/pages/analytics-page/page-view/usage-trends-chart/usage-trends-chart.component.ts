@@ -104,7 +104,9 @@ export class UsageTrendsChartComponent implements OnInit {
          },
          yaxis: {
             labels: {
-               formatter: (val) => { return "€" + val }
+               formatter: val => {
+                  return '€' + val;
+               }
             }
          },
          grid: {
