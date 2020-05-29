@@ -9,6 +9,7 @@ export interface RoomCardItem {
    humidity: number;
    electricity: number;
    lampPower: number;
+   imagePath: string;
 }
 
 const livingRoom: RoomCardItem = {
@@ -19,6 +20,7 @@ const livingRoom: RoomCardItem = {
    humidity: 68,
    electricity: 412,
    lampPower: 144,
+   imagePath: './assets/room-images/living-room.png',
 };
 
 const bathroom: RoomCardItem = {
@@ -29,6 +31,7 @@ const bathroom: RoomCardItem = {
    humidity: 87,
    electricity: 43,
    lampPower: 20,
+   imagePath: './assets/room-images/bathroom.jpg',
 };
 
 const bedroom: RoomCardItem = {
@@ -39,6 +42,7 @@ const bedroom: RoomCardItem = {
    humidity: 62,
    electricity: 89,
    lampPower: 0,
+   imagePath: './assets/room-images/bedroom.jpg',
 };
 
 const bedroomGuests: RoomCardItem = {
@@ -49,6 +53,7 @@ const bedroomGuests: RoomCardItem = {
    humidity: 67,
    electricity: 9,
    lampPower: 0,
+   imagePath: './assets/room-images/bedroom-guests.jpg',
 };
 
 const kitchen: RoomCardItem = {
@@ -59,8 +64,8 @@ const kitchen: RoomCardItem = {
    humidity: 69,
    electricity: 21,
    lampPower: 134,
+   imagePath: './assets/room-images/kitchen.jpeg',
 };
-
 
 @Injectable()
 export class RoomsDataService {

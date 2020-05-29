@@ -27,13 +27,11 @@ export class EditRoomPreferencesComponent implements OnInit {
          const roomId = params[idParam];
          this.roomsDataService.getRoomById(roomId).subscribe(room => {
             this.room = room;
-            console.log(room);
          });
       });
    }
 
    goBack(): void {
-      console.log(this.room);
       this.roomsDataService.updateRoom(this.room.id, this.room);
       this.router.navigate(['../../'], { relativeTo: this.route });
    }

@@ -1,23 +1,31 @@
 <ion-header [translucent]="true">
    <ion-toolbar>
       <ion-title>
-         <div>
+         <span>
             {{ room?.title}}
 
             <ion-icon class="close-button" name="close"
                       (click)="goBack()"></ion-icon>
-         </div>
+         </span>
       </ion-title>
    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
    <div class="page-container">
-
+      <div class="room-image-container">
+         <img [src]="room.imagePath"
+              alt="Room image">
+      </div>
       <div>
-         <div class="edit-preferences-header">Temperature
+         <div class="edit-preferences-header">
+            <div class="inline-block">Temperature</div>
             <span class="header-value">{{room?.temperature}} &ordm;C</span>
          </div>
+
+         <span class="material-icons cold-temp-icon">
+            ac_unit
+         </span>
          <mat-slider
             color="primary"
             thumbLabel
@@ -27,24 +35,34 @@
             min="10"
             max="50">
          </mat-slider>
+         <span class="material-icons hot-temp-icon">
+            wb_sunny
+         </span>
       </div>
 
       <mat-divider></mat-divider>
 
       <div>
-         <div class="edit-preferences-header">Lighting
+         <div class="edit-preferences-header">
+            <div class="inline-block">Lighting</div>
             <span class="header-value">{{room?.lampPower}} lm</span>
          </div>
 
+         <span class="material-icons-outlined ion-color-primary">
+            wb_incandescent
+         </span>
          <mat-slider
             color="primary"
             thumbLabel
             (input)="room.lampPower = $event.value"
             [value]="room.lampPower"
             [displayWith]="formatLabel"
-            min="10"
-            max="50">
+            min="0"
+            max="150">
          </mat-slider>
+         <span class="material-icons mat-form-field-outline lamp-icon">
+            wb_incandescent
+         </span>
       </div>
    </div>
 </ion-content>
