@@ -41,7 +41,7 @@ const bedroom: RoomCardItem = {
    temperature: 23,
    humidity: 62,
    electricity: 89,
-   lampPower: 0,
+   lampPower: 20,
    imagePath: './assets/room-images/bedroom.jpg',
 };
 
@@ -52,7 +52,7 @@ const bedroomGuests: RoomCardItem = {
    temperature: 22,
    humidity: 67,
    electricity: 9,
-   lampPower: 0,
+   lampPower: 20,
    imagePath: './assets/room-images/bedroom-guests.jpg',
 };
 

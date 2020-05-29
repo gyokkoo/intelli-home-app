@@ -14,7 +14,8 @@
 <ion-content [fullscreen]="true">
    <div class="page-container">
       <div class="room-image-container">
-         <img [src]="room.imagePath"
+         <img [ngStyle]="{ opacity: (room.lampPower / 150) }"
+              [src]="room.imagePath"
               alt="Room image">
       </div>
       <div>
