@@ -9,12 +9,15 @@ import { RoomsPageRoutingModule } from './rooms-page-routing.module';
 import { RoomsPageViewComponent } from './page-view/rooms-page-view.component';
 import { RoomCardComponent } from './room-card/room-card.component';
 import { RoomsDataService } from './rooms-data.service';
+import { EditRoomPreferencesComponent } from './edit-room-preferences/edit-room-preferences.component';
+import { MaterialModule } from '../../material.module';
 
 @NgModule({
    imports: [
       IonicModule,
       CommonModule,
       FormsModule,
+      MaterialModule,
       ExploreContainerComponentModule,
       RoomsPageRoutingModule
    ],
@@ -25,9 +28,11 @@ import { RoomsDataService } from './rooms-data.service';
       RoomsPageComponent,
       RoomsPageViewComponent,
       RoomCardComponent,
+      EditRoomPreferencesComponent,
    ],
    entryComponents: [
       RoomCardComponent,
+      EditRoomPreferencesComponent,
    ]
 })
 export class RoomsPageModule {

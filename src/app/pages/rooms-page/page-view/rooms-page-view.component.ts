@@ -17,4 +17,8 @@ export class RoomsPageViewComponent implements OnInit {
    ngOnInit(): void {
       this.roomsData$ = this.roomsDataService.getRoomsData();
    }
+
+   navigateToRoomDetails(roomData: RoomCardItem): void {
+      console.log(roomData);
+   }
 }

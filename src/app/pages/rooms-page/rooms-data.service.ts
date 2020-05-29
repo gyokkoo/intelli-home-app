@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
 export interface RoomCardItem {
+   id: string;
    headerImage: string;
    title: string;
    temperature: number;
@@ -11,6 +12,7 @@ export interface RoomCardItem {
 }
 
 const livingRoom: RoomCardItem = {
+   id: 'living-room',
    headerImage: 'tv',
    title: 'Living room',
    temperature: 21,
@@ -20,6 +22,7 @@ const livingRoom: RoomCardItem = {
 };
 
 const bathroom: RoomCardItem = {
+   id: 'bathroom',
    headerImage: 'bathtub',
    title: 'Bathroom',
    temperature: 27,
@@ -29,6 +32,7 @@ const bathroom: RoomCardItem = {
 };
 
 const bedroom: RoomCardItem = {
+   id: 'bedroom',
    headerImage: 'king_bed',
    title: 'Bedroom',
    temperature: 23,
@@ -38,6 +42,7 @@ const bedroom: RoomCardItem = {
 };
 
 const bedroomGuests: RoomCardItem = {
+   id: 'bedroom-guests',
    headerImage: 'king_bed',
    title: 'Bedroom (Guests)',
    temperature: 22,
@@ -47,6 +52,7 @@ const bedroomGuests: RoomCardItem = {
 };
 
 const kitchen: RoomCardItem = {
+   id: 'kitchen',
    headerImage: 'room_service',
    title: 'Kitchen',
    temperature: 22,
@@ -58,17 +64,27 @@ const kitchen: RoomCardItem = {
 
 @Injectable()
 export class RoomsDataService {
+   private readonly roomsState = new Map<string, RoomCardItem>();
 
    constructor() {
+      // Initialize the state of the rooms.
+      this.roomsState.set(livingRoom.id, livingRoom);
+      this.roomsState.set(bathroom.id, bathroom);
+      this.roomsState.set(bedroom.id, bedroom);
+      this.roomsState.set(bedroomGuests.id, bedroomGuests);
+      this.roomsState.set(kitchen.id, kitchen);
+
    }
 
    getRoomsData(): Observable<RoomCardItem[]> {
-      return of([
-         { ...livingRoom },
-         { ...bathroom },
-         { ...bedroom },
-         { ...bedroomGuests },
-         { ...kitchen },
-      ]);
+      return of([...this.roomsState.values()]);
+   }
+
+   getRoomById(roomId: string): Observable<RoomCardItem> {
+      return of(this.roomsState.get(roomId));
+   }
+
+   updateRoom(roomId: string, room: RoomCardItem) {
+      this.roomsState.set(roomId, room);
    }
 }

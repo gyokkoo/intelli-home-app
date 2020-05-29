@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+   <ion-toolbar>
+      <ion-title>
+         <div>
+            {{ room?.title}}
+
+            <ion-icon class="close-button" name="close"
+                      (click)="goBack()"></ion-icon>
+         </div>
+      </ion-title>
+   </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+   <div class="page-container">
+
+      <div>
+         <div class="edit-preferences-header">Temperature
+            <span class="header-value">{{room?.temperature}} &ordm;C</span>
+         </div>
+         <mat-slider
+            color="primary"
+            thumbLabel
+            (input)="room.temperature = $event.value"
+            [value]="room.temperature"
+            [displayWith]="formatLabel"
+            min="10"
+            max="50">
+         </mat-slider>
+      </div>
+
+      <mat-divider></mat-divider>
+
+      <div>
+         <div class="edit-preferences-header">Lighting
+            <span class="header-value">{{room?.lampPower}} lm</span>
+         </div>
+
+         <mat-slider
+            color="primary"
+            thumbLabel
+            (input)="room.lampPower = $event.value"
+            [value]="room.lampPower"
+            [displayWith]="formatLabel"
+            min="10"
+            max="50">
+         </mat-slider>
+      </div>
+   </div>
+</ion-content>

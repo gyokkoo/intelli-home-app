@@ -1,0 +1,22 @@
+.close-button {
+   cursor: pointer;
+}
+
+mat-slider {
+   width: 250px;
+}
+
+.mat-divider {
+   margin: 2rem 10%;
+}
+
+.edit-preferences-header {
+   color: var(--ion-color-primary);
+   font-size: larger;
+   padding-bottom: 2rem;
+
+   .header-value {
+      padding-left: 4rem;
+      color: var(--ion-color-dark);
+   }
+}
