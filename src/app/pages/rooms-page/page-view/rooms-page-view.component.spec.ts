@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { IonicModule } from '@ionic/angular';
 import { RoomsPageViewComponent } from './rooms-page-view.component';
 import { RoomCardComponent } from '../room-card/room-card.component';
@@ -12,7 +13,7 @@ describe('RoomsPageComponent', () => {
       TestBed.configureTestingModule({
          declarations: [RoomsPageViewComponent, RoomCardComponent],
          providers: [RoomsDataService],
-         imports: [IonicModule]
+         imports: [IonicModule, RouterTestingModule]
       }).compileComponents();
 
       fixture = TestBed.createComponent(RoomsPageViewComponent);
