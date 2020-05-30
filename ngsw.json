@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1590829603869,
+  "timestamp": 1590830568780,
   "index": "https://gyokkoo.github.io/intelli-home-app/index.html",
   "assetGroups": [
     {
@@ -191,8 +191,8 @@
         "https://gyokkoo.github.io/intelli-home-app/common-es2015.538f61b9bfec1f10c276.js",
         "https://gyokkoo.github.io/intelli-home-app/common-es5.538f61b9bfec1f10c276.js",
         "https://gyokkoo.github.io/intelli-home-app/index.html",
-        "https://gyokkoo.github.io/intelli-home-app/main-es2015.ec122e4e1457ce5d92e1.js",
-        "https://gyokkoo.github.io/intelli-home-app/main-es5.ec122e4e1457ce5d92e1.js",
+        "https://gyokkoo.github.io/intelli-home-app/main-es2015.22928481ca973b122da7.js",
+        "https://gyokkoo.github.io/intelli-home-app/main-es5.22928481ca973b122da7.js",
         "https://gyokkoo.github.io/intelli-home-app/manifest.webmanifest",
         "https://gyokkoo.github.io/intelli-home-app/polyfills-core-js-es2015.cd94bb94abe4de4673b0.js",
         "https://gyokkoo.github.io/intelli-home-app/polyfills-core-js-es5.cd94bb94abe4de4673b0.js",
@@ -443,10 +443,10 @@
     "https://gyokkoo.github.io/intelli-home-app/assets/shapes.svg": "5413e95adabcb2cb639970051f55e0ddb64ace53",
     "https://gyokkoo.github.io/intelli-home-app/common-es2015.538f61b9bfec1f10c276.js": "43616e9d18108d4d9d2e3dad4607be735e0f4e0b",
     "https://gyokkoo.github.io/intelli-home-app/common-es5.538f61b9bfec1f10c276.js": "54d315eda3e7d6d0eb69cbf359cf143fc78a68de",
-    "https://gyokkoo.github.io/intelli-home-app/index.html": "b267de22543197dc52e73496ddd7211a7b1a56e8",
-    "https://gyokkoo.github.io/intelli-home-app/main-es2015.ec122e4e1457ce5d92e1.js": "a245101e10e695bcae3a32c328178b09818f55dc",
-    "https://gyokkoo.github.io/intelli-home-app/main-es5.ec122e4e1457ce5d92e1.js": "2a4d56905da730242455c5af04cd6ec168a9dda1",
-    "https://gyokkoo.github.io/intelli-home-app/manifest.webmanifest": "9a088b7c4339228d1082e666ce105dc889bc180c",
+    "https://gyokkoo.github.io/intelli-home-app/index.html": "38275c3a537a876e926bf14500783739a158185d",
+    "https://gyokkoo.github.io/intelli-home-app/main-es2015.22928481ca973b122da7.js": "3ecea29b4b8c11ca673fa4c71f914f6a9a1cfb5c",
+    "https://gyokkoo.github.io/intelli-home-app/main-es5.22928481ca973b122da7.js": "da74254c4202de743bce6391d02b7e58002b98a1",
+    "https://gyokkoo.github.io/intelli-home-app/manifest.webmanifest": "b9267125881970d33a050e93a31e65795a5cda82",
     "https://gyokkoo.github.io/intelli-home-app/polyfills-core-js-es2015.cd94bb94abe4de4673b0.js": "fe18301772fedd9faed9155d0253b25bad547329",
     "https://gyokkoo.github.io/intelli-home-app/polyfills-core-js-es5.cd94bb94abe4de4673b0.js": "2238555b018c094b6a5445b2ea64d26959264b3a",
     "https://gyokkoo.github.io/intelli-home-app/polyfills-css-shim-es2015.097ad57c9623102bfb3b.js": "b012b421ba37e810766f54fd6ef5a11e248d22a6",
