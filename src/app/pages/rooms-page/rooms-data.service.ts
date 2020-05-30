@@ -20,7 +20,7 @@ const livingRoom: RoomCardItem = {
    humidity: 68,
    electricity: 412,
    lampPower: 144,
-   imagePath: './assets/room-images/living-room.png',
+   imagePath: './assets/room-images/living-room.jpg',
 };
 
 const bathroom: RoomCardItem = {

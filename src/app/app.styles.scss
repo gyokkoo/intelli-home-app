@@ -18,6 +18,10 @@ ion-app {
    font-size: larger;
 }
 
+.small-icon {
+   opacity: 50% !important;
+}
+
 .pt-2 {
    padding-top: 2rem;
 }
@@ -28,4 +32,7 @@ ion-app {
 
 .page-container {
    overflow-x: auto;
+   padding-top: 2rem;
+   position: relative;
+   height: 100%;
 }
