@@ -4,17 +4,31 @@
 
    img {
       opacity: 0.5;
+      margin-bottom: -4px;
    }
 }
-
 
 
 ion-title {
    text-align: center;
 }
 
+@media screen and (max-width: 678px) {
+   .page-container {
+      padding-top: 0 !important;
+   }
+   .room-image-container {
+      width: 100%;
+   }
+}
+
+@media screen and (min-width: 679px) {
+   .room-image-container {
+      width: 400px;
+   }
+}
+
 .room-image-container {
-   width: 350px;
    margin-bottom: 1.5rem;
 }
 
